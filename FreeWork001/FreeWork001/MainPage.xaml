@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FreeWork001.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:freework001="clr-namespace:FreeWork001"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    BackgroundColor="White"
+    mc:Ignorable="d">
+
+    <ContentPage.Content>
+        <freework001:TutorialView
+            x:Name="_tutorialView"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand" />
+    </ContentPage.Content>
+
+</ContentPage>

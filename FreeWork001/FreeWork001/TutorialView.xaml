@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grid
+    x:Class="FreeWork001.TutorialView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="60*" />
+        <RowDefinition Height="20*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Image
+        x:Name="ImgCover"
+        Grid.Row="0"
+        Grid.Column="0"
+        Aspect="AspectFill"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand" />
+
+    <Grid
+        Grid.Row="1"
+        Grid.Column="0"
+        Margin="50,20,50,20"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label
+            x:Name="LbTitle"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontFamily="{StaticResource FontBold}"
+            FontSize="40"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Text="TEAMWORK"
+            TextColor="#3F51B5"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <Label
+            x:Name="LbDescription"
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            FontFamily="{StaticResource FontRegularSF}"
+            FontSize="16"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Text="Lorem ipsom dolor site amet Lorem ipsom dolor site amet Lorem ipsom dolor site amet"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+    </Grid>
+
+    <Grid
+        Grid.Row="2"
+        Grid.Column="0"
+        Margin="30,20,30,20"
+        VerticalOptions="End">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label
+            x:Name="LbPrev"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontFamily="{StaticResource FontRopoBold}"
+            FontSize="22"
+            HorizontalOptions="Start"
+            Text="Geri"
+            TextColor="#757575"
+            VerticalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer x:Name="BuPrev" Tapped="BuPrev_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <StackLayout
+            x:Name="SlPointList"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalOptions="Center"
+            Orientation="Horizontal"
+            VerticalOptions="Center">
+
+            <Image
+                Grid.Row="0"
+                Grid.Column="0"
+                Aspect="AspectFit"
+                Source="ic_full" />
+            <Image
+                Grid.Row="0"
+                Grid.Column="1"
+                Aspect="AspectFit"
+                Source="ic_empty" />
+            <Image
+                Grid.Row="0"
+                Grid.Column="2"
+                Aspect="AspectFit"
+                Source="ic_empty" />
+        </StackLayout>
+        <Label
+            x:Name="LbNext"
+            Grid.Row="0"
+            Grid.Column="2"
+            FontFamily="{StaticResource FontRopoBold}"
+            FontSize="22"
+            HorizontalOptions="End"
+            Text="İleri"
+            TextColor="#757575"
+            VerticalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer x:Name="BuNext" Tapped="BuNext_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+    </Grid>
+</Grid>

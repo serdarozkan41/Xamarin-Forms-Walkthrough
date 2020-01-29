@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="FreeWork001.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <OnPlatform x:Key="FontBold" x:TypeArguments="x:String">
+                <On Platform="Android" Value="luckiestguy.ttf#Luckiest Guy" />
+            </OnPlatform>
+            <OnPlatform x:Key="FontRopoBold" x:TypeArguments="x:String">
+                <On Platform="Android" Value="ropasoftbold.ttf#RopaSoftSCPTTW07-Bold" />
+            </OnPlatform>
+            <OnPlatform x:Key="FontRegularSF" x:TypeArguments="x:String">
+                <On Platform="Android" Value="SFProDisplay_Regular.ttf#SF Pro Display" />
+            </OnPlatform>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
