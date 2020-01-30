@@ -50,6 +50,14 @@ namespace FreeWork001
             }
         }
 
+        private Action<int> changeIndex;
+
+        public Action<int> ChangeIndex
+        {
+            get { return changeIndex; }
+            set { changeIndex = value; }
+        }
+
         #endregion
 
         #region MAIN
@@ -112,6 +120,8 @@ namespace FreeWork001
 
         private void ChangeTutorial()
         {
+            
+            ChangeIndex.Invoke(TutorialIndex);
             StartAnim();
             ImgCover.Source = ActiveTutorial.CoverImgUrl;
             LbTitle.Text = ActiveTutorial.Title;

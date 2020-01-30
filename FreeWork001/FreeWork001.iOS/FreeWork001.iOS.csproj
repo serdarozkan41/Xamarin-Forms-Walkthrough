@@ -67,6 +67,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\luckiestguy.ttf" />
+    <BundleResource Include="Resources\ropasoftbold.ttf" />
+    <BundleResource Include="Resources\SFProDisplay_Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

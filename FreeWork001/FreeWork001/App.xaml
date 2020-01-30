@@ -7,18 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Application.Resources>
-
-        <ResourceDictionary>
-            <OnPlatform x:Key="FontBold" x:TypeArguments="x:String">
-                <On Platform="Android" Value="luckiestguy.ttf#Luckiest Guy" />
-            </OnPlatform>
-            <OnPlatform x:Key="FontRopoBold" x:TypeArguments="x:String">
-                <On Platform="Android" Value="ropasoftbold.ttf#RopaSoftSCPTTW07-Bold" />
-            </OnPlatform>
-            <OnPlatform x:Key="FontRegularSF" x:TypeArguments="x:String">
-                <On Platform="Android" Value="SFProDisplay_Regular.ttf#SF Pro Display" />
-            </OnPlatform>
-        </ResourceDictionary>
-
+        <OnPlatform x:Key="FontBold" x:TypeArguments="x:String">
+            <On Platform="Android" Value="luckiestguy.ttf#Luckiest Guy" />
+            <On Platform="iOS" Value="Luckiest Guy" />
+        </OnPlatform>
+        <OnPlatform x:Key="FontRopoBold" x:TypeArguments="x:String">
+            <On Platform="Android" Value="ropasoftbold.ttf#RopaSoftSCPTTW07-Bold" />
+            <On Platform="iOS" Value="RopaSoftSCPTTW07-Bold" />
+        </OnPlatform>
+        <OnPlatform x:Key="FontRegularSF" x:TypeArguments="x:String">
+            <On Platform="Android" Value="SFProDisplay_Regular.ttf#SF Pro Display" />
+            <On Platform="iOS" Value="SF Pro Display" />
+        </OnPlatform>
     </Application.Resources>
 </Application>

@@ -3,6 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Fristy.Walkthrough</PackageId>
+    <Authors>Serdar OZKAN</Authors>
+    <Company>Fristy</Company>
+    <Product>Walkthrough</Product>
+    <Copyright>Serdar OZKAN</Copyright>
+    <PackageProjectUrl>https://github.com/serdarozkan41/Xamarin-Forms-Walkthrough</PackageProjectUrl>
+    <Description>Xamarin Forms Tutorial Screens</Description>
+    <PackageIcon>app_icon.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/serdarozkan41/Xamarin-Forms-Walkthrough</RepositoryUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <PackageTags>xamarin,xamairin forms,walkthrough,tutorial</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,5 +33,16 @@
     <EmbeddedResource Update="TutorialView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Pictures\conferance\app_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\..\..\..\Pictures\conferance\license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>

@@ -81,7 +81,7 @@
             FontFamily="{StaticResource FontRopoBold}"
             FontSize="22"
             HorizontalOptions="Start"
-            Text="Geri"
+            Text="Back"
             TextColor="#757575"
             VerticalOptions="Center">
             <Label.GestureRecognizers>
@@ -119,7 +119,7 @@
             FontFamily="{StaticResource FontRopoBold}"
             FontSize="22"
             HorizontalOptions="End"
-            Text="İleri"
+            Text="Next"
             TextColor="#757575"
             VerticalOptions="Center">
             <Label.GestureRecognizers>
