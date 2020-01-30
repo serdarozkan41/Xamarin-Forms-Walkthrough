@@ -1,4 +1,4 @@
-# ![Logo](https://i.ibb.co/r0QwrpR/app-icon.png) Fristy.Walktrought
+# ![Logo](https://i.ibb.co/KW48F2G/app-icon.png) Fristy.Walktrought
 
 ### Setup
 * Available on NuGet: http://www.nuget.org/packages/Plugin.Permissions [![NuGet](https://img.shields.io/nuget/v/Plugin.Permissions.svg?label=NuGet)](https://www.nuget.org/packages/Fristy.Walkthrough/)
